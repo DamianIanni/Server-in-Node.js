@@ -1,9 +1,7 @@
 const { Schema, model } = require('mongoose')
-// const Schema = Schema()
-// const model = model()
 
-const userCreate =  new Schema({
-    userName: {
+const meetingSent = new Schema({
+    toUserName: {
         type: String,
         required: true
     },
@@ -11,22 +9,23 @@ const userCreate =  new Schema({
         type: String,
         required: true
     },
-    lastName: {
+    locate: {
         type: String,
         required: true
     },
-    email: {
+    date: {
         type: String,
         required: true
     },
-    password: {
+    hour: {
         type: String,
         required: true
     },
-    friendList: [],
-    meetingRecived: [],
-    meetingSent: []
+    time: {
+        type: String,
+        required: true
+    },
+    meetingStatus: null
 })
 
-
-module.exports = model('userCreate', userCreate)
+module.exports = model('meetingSent', meetingSent)
