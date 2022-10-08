@@ -25,7 +25,7 @@ const meetingSent = new Schema({
         type: String,
         required: true
     },
-    meetingStatus: null
+    meetingStatus: Boolean
 })
 
 module.exports = model('meetingSent', meetingSent)

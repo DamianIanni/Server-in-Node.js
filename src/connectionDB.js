@@ -7,5 +7,8 @@ mongoose.connect(`mongodb://${MEETINGAPP_MONGODB_HOST}/${MEETINGAPP_MONGODB_DATA
 keepAlive: true,
 useNewUrlParser: true,
 useUnifiedTopology: true
-}).then(db => console.log('DATABASE CONNECTED',db.connections[0])).catch(error => console.log('DATABSE ERROR',error))
+}).then(db => console.log('DATABASE CONNECTED',
+// db.connections[0]
+))
+.catch(error => console.log('DATABSE ERROR',error))
 

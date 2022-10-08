@@ -23,7 +23,7 @@ app.use('/api/friendsRequest', require('./routes/Friends/friendsRequest'))
 app.use('/api/friendsAdd', require('./routes/Friends/friendsAdd'))
 app.use('/api/friendsDelete', require('./routes/Friends/friendsDelete'))
 app.use('/api/invitation', require('./routes/Invitation/invitation'))
-app.use('/api/crateInvitation', require('./routes/Invitation/createInvitation'))
+app.use('/api/createInvitation', require('./routes/Invitation/createInvitation'))
 
 
 // Start the server
