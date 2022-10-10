@@ -2,6 +2,7 @@ const modelCreateAccount = require('../../models/createAccount')
 
 exports.createAccount = async (req, res) => {
 
+    console.log(req.body)
     const newUser = new modelCreateAccount({
         userName: req.body.userName,
         name: req.body.name,
@@ -14,6 +15,7 @@ exports.createAccount = async (req, res) => {
     })
 
     try {
+        console.log("DALE DALE")
         const postModelCreateAccount = await newUser.save()
         res.json(postModelCreateAccount)
     } catch (error) {

@@ -8,3 +8,6 @@ router.get('/', controller.getFriends) // To get friends and show list
 
 
 module.exports = router
+
+
+

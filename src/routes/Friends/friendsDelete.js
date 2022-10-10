@@ -2,6 +2,6 @@ const { Router } = require('express');
 const router = Router()
 const controller = require('../../controllers/Friends/friendsDelete')
 
-router.post('/', controller.deleteFriend)
+router.delete('/', controller.deleteFriend)
 
 module.exports = router
