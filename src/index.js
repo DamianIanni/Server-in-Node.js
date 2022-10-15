@@ -15,10 +15,10 @@ app.use(express.urlencoded({ extended: false })); //the server understand data c
 app.use(express.json());
 
 //Routes
-app.use('/api/login', require('./routes/Auth/login'));
-app.use('/api/logout', require('./routes/Auth/logout'));
-app.use('/api/recoverPassword', require('./routes/Auth/recoverPassword'));
-app.use('/api/createAccount', require('./routes/Auth/createAccount'));
+app.use('/api/login', require('./routes/Auth/login')); /// Do it with Firebase
+app.use('/api/logout', require('./routes/Auth/logout')); /// Do it with Firebase
+app.use('/api/recoverPassword', require('./routes/Auth/recoverPassword')); /// Do it with Firebase
+app.use('/api/createAccount', require('./routes/Auth/createAccount')); /// Done
 app.use('/api/friendsRequest', require('./routes/Friends/friendsRequest'))
 app.use('/api/friendsAdd', require('./routes/Friends/friendsAdd'))
 app.use('/api/friendsDelete', require('./routes/Friends/friendsDelete'))
