@@ -20,10 +20,7 @@ const acceptInvitation = async (req) => {
         const existinginvitations = getCreateAccountModel[0].meetingRecived
         const finalInvitations = existinginvitations.map(item => {
             if (item.id === invitation.id) {
-
                 item.meetingStatus = true
-
-                
             }
             return item
         })

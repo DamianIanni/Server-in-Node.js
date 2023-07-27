@@ -21,6 +21,7 @@ const userCreate = new Schema({
         type: String,
         required: true
     },
+    friendsrequest: [],
     friendList: [],
     meetingRecived: [],
     meetingSent: []
